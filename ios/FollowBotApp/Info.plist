@@ -50,14 +50,12 @@
       <key>NSAllowsLocalNetworking</key>
       <true/>
     </dict>
-    <key>NSBluetoothAlwaysUsageDescription</key>
-    <string>This app uses Bluetooth to connect to your robot.</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>This app needs access to your location even when running in the background to control the robot.</string>
+    <string>Allow $(PRODUCT_NAME) to access your location</string>
     <key>NSLocationAlwaysUsageDescription</key>
     <string>Allow $(PRODUCT_NAME) to access your location</string>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string>This app uses your location to help the robot follow you.</string>
+    <string>Allow $(PRODUCT_NAME) to access your location</string>
     <key>UILaunchStoryboardName</key>
     <string>SplashScreen</string>
     <key>UIRequiredDeviceCapabilities</key>

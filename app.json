@@ -6,46 +6,31 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "plugins": [
-      [
-        "expo-dev-client"
-      ],
-      "react-native-ble-plx"
-    ],
     "ios": {
       "supportsTablet": true,
-      "infoPlist": {
-        "NSBluetoothAlwaysUsageDescription": "This app uses Bluetooth to connect to your robot.",
-        "NSLocationWhenInUseUsageDescription": "This app uses your location to help the robot follow you.",
-        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location even when running in the background to control the robot."
-      },
       "bundleIdentifier": "com.anonymous.FollowBotApp"
     },
     "android": {
+      "package": "com.anonymous.FollowBotApp",
       "permissions": [
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION",
-        "BLUETOOTH",
-        "BLUETOOTH_ADMIN",
-        "BLUETOOTH_CONNECT",
-        "BLUETOOTH_SCAN",
         "android.permission.BLUETOOTH",
         "android.permission.BLUETOOTH_ADMIN",
-        "android.permission.BLUETOOTH_CONNECT"
-      ],
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "package": "com.anonymous.FollowBotApp"
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.INTERNET"
+      ]
     },
+    "plugins": [
+      "expo-dev-client"
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     },
